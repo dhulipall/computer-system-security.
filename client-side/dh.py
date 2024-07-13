@@ -1,3 +1,4 @@
+#import modules
 import sys, os, base64
 import simplejson as json
 from cryptography.hazmat.backends import default_backend
@@ -11,7 +12,6 @@ from messencrypt import encrypt
 from messencrypt import generateFernetKey
 
 #Creates the private/public key pair for the server and gets the shared key from the client public key.
-#Puts the shared key through a KDF for AES-128.
 def hubExchange(client_public, fernet_key):
     #Generate a private key for use in the exchange
     hub_private = ec.generate_private_key(
