@@ -1,4 +1,4 @@
-# chat_client.py
+#Import necessary librariries and modules
 import sys, socket, select, os, base64, getpass, time
 import simplejson as json
 import ssl
@@ -7,7 +7,7 @@ from cryptography.hazmat.backends import default_backend
 from mk_cert_files import *
 from OpenSSL import SSL
 
-#Own modules
+#modules
 from dh import *
 from messencrypt import *
 from sign import *
