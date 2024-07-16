@@ -1,4 +1,4 @@
-#Import necessary librariries and modules
+#Import necessary librariries and module
 import sys, socket, select, os, base64, getpass, time
 import simplejson as json
 import ssl
